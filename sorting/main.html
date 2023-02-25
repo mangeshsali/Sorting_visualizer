@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="icon" type="image/x-icon" href="/9637984.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        </div>
+        <div class="header_right">
+          <img src="/9637984.png" alt="logo" class="img-logo" />
+          <p class="nav-heading">Sorting Visualizer</p>
+        </div>
+      </nav>
+    </header>
+    <section class="main-section">
+      <div id="Info_Cont1">
+        <!-- <div class="array-inputs"> -->
+          <p>Size of the array:</p>
+          <input
+            id="a_size"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="10"
+          />
+          <p>Speed of the algorithm:</p>
+          <input id="a_speed" type="range" min="1" max="5" step="1" value="4" />
+          <button id="a_generate" class="button-24" role="button">
+            Generate New Array !
+          </button>
+        <div class="algos">
+          <button style="margin-right: 10px" >Bubble</button>
+          <button style="margin-right: 9px">Quick</button>
+          <button style="margin-right: 8px">Merge</button>
+          <button style="margin-right: 8px">Heap</button>
+          <button style="margin-right: 10px">Insertion</button>
+          <button style="margin-right: -2px">Selection</button>
+        </div>
+      </div>
+      <div id="array_container"></div>
+      <div id="Info_Cont2">
+        <h1>Unsorted</h1>
+        <div class="triangle"></div>
+        <br />
+        <br />
+        <h1>Checking</h1>
+        <div class="rectangle"></div>
+        <br />
+        <br />
+        <h1>Swapping</h1>
+        <div class="circle"></div>
+        <br />
+        <br />
+        <h1>Sorted</h1>
+        <div class="square"></div>
+  
+      
+
+      </div>
+
+      </div>
+    </section>
+    <footer>
+      <p>Developed By <span style="color: red"> ❤ </span>Mangesh</p>
+    </footer>
+
+    <script src="./Algorithm/main.js"></script>
+    <script src="./Algorithm/visualizations.js"></script>
+    <script src="./Algorithm/bubble.js"></script>
+    <script src="./Algorithm/merge.js"></script>
+    <script src="./Algorithm/quick.js"></script>
+    <script src="./Algorithm/heap.js"></script>
+    <script src="./Algorithm/selection.js"></script>
+    <script src="./Algorithm/insertion.js"></script>
+  </body>
+</html>
