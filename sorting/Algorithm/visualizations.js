@@ -30,8 +30,8 @@ function div_update(cont, height, color, arrayItem) {
     cont.style = " margin:0% " + margin_size + "%; transform: rotateX(180deg);  width:" + (100 / array_size - (2 * margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
   }
     , c_delay += delay_time);
-  cont.textContent = arrayItem;
-  console.log(arrayItem);
+  // cont.textContent = arrayItem;
+  // console.log(arrayItem);
 }
 
 function enable_buttons() {

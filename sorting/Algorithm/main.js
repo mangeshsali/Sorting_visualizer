@@ -27,7 +27,7 @@ function generate_array() {
     cont.appendChild(divs[i]);
     margin_size = 0.1;
     divs[i].style = " margin:0% " + margin_size + "%; background-color:blue; font-size:15px; border-top-left-radius:5px; border-top-right-radius:5px; background-color:rgb(168 85 247); transform: rotateX(180deg);  width:" + (100 / array_size - (2 * margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
-    divs[i].innerText = div_sizes[i];
+    // divs[i].innerText = div_sizes[i];
   }
   console.log(div_sizes);
 }
