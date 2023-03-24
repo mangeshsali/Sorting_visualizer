@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sort.css">
+    <link rel="icon" type="image/x-icon" href="/logo.svg" />
+    <title>Selection Sort Working</title>
+  </head>
+  <body>
+    <div class="nav-head">
+      <h1>Selection Sort Working</h1>
+    </div>
+    <div class="main-container">
+    <div class="menu-button">
+      <a href="./bubble.html" class="button-24 menu">Bubble</a>
+      <a href="./merge.html" class="button-24 menu">Merge</a>
+      <a href="./quick.html" class="button-24 menu">Quick</a>
+      <a href="./heap.html" class="button-24 menu">heap</a>
+      <a href="./selection.html" class="button-24 menu">Selection</a>
+      <a href="./insertion.html" class="button-24 menu">Insertion</a>
+      <br>
+      <br>
+      <br>
+      <a href="./main.html" class="button-25">Start Visualizer</a>
+      <a href="/index.html" class="button-25 home">Home</a>
+    </div>
+    <div class="container">
+      <h2>Selection sort complexity</h2>
+      <br>
+<p>
+  Now, let's see the time complexity of selection sort in best case, average case, and in worst case. We will also see the space complexity of the selection sort.
+
+</p>
+  <br>
+  <h3>1. Time Complexity</h3>
+  <article>
+    Best Case :- O(n2)<br>
+Average Case :- O(n2)<br>
+Worst Case :- O(n2)<br>
+<br>
+</article>
+      <p>
+        Now, let's see the working of the Selection sort Algorithm.<br>
+
+        To understand the working of the Selection sort algorithm, <br>
+        let's take an unsorted array. It will be easier to understand the Selection sort via an example.<br>
+
+        Let the elements of array are -<br />
+        <div class="imges">
+          <img src="./asset/selection/step-1.png" alt="step">
+        </div>
+        <p>Now, for the first position in the sorted array, the entire array is to be scanned sequentially.<br> At present, 12 is stored at the first position, after searching the entire array, it is found that 8 is the smallest value.<br> <br>
+        </p>
+      </p>
+      <div class="imges">
+        <img src="./asset/selection/step-2.png" alt="step">
+      </div>
+      <p>So, swap 12 with 8. After the first iteration, 8 will appear at the first position in the sorted array.</p>
+      <div class="imges">
+        <img src="./asset/selection/step-3.png" alt="step">
+      </div>
+<p>For the second position, where 29 is stored presently, we again sequentially scan the rest of the items of unsorted array.<br>After scanning, we find that 12 is the second lowest element in the array that should be appeared at second position.<br></p>
+<div class="imges">
+  <img src="./asset/selection/step-4.png" alt="step">
+</div>
+<p>Now, swap 29 with 12. After the second iteration, 12 will appear at the second position in the sorted array. <br>
+<br>So, after two iterations, the two smallest values are placed at the beginning in a sorted way.
+<br>
+<br>
+</p>
+<div class="imges">
+  <img src="./asset/selection/step-5.png" alt="step">
+</div>
+<p>The same process is applied to the rest of the array elements. Now, we are showing a pictorial representation of the entire sorting process.<br>array of found values in sorted order.<br></p>
+  <div class="imges">
+    <img src="./asset/selection/step-6.png" alt="step">
+  </div>
+  <p>Now, the array is completely sorted.</p>
+
+<br>
+<br>
+
+
+<a href="./main.html" class="button-25">Start Visualizer</a>
+    </div>
+    
+    </div>
+    
+    <footer>
+      <p>Developed with &nbsp; <span style="color: rgb(239 68 68)"> ❤ </span> &nbsp; By Mangesh  <a href="https://github.com/mangeshsali/Sorting_visualizer"><i class="fa-brands fa-github link"></a></i> 
+        <a href="https://www.linkedin.com/in/mangesh-sali-535b55224/"><i class="fa-brands fa-linkedin link"></a></i></p> 
+    </footer>
+  </body>
+  <script src="https://kit.fontawesome.com/314c857e26.js" crossorigin="anonymous"></script>
+</html>

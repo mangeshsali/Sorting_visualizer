@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sort.css">
+    <link rel="icon" type="image/x-icon" href="/logo.svg" />
+    <title>Insertion Sort Working</title>
+  </head>
+  <body>
+    <div class="nav-head">
+      <h1>Insertion Sort Working</h1>
+    </div>
+    <div class="main-container">
+    <div class="menu-button">
+      <a href="./bubble.html" class="button-24 menu">Bubble</a>
+      <a href="./merge.html" class="button-24 menu">Merge</a>
+      <a href="./quick.html" class="button-24 menu">Quick</a>
+      <a href="./heap.html" class="button-24 menu">heap</a>
+      <a href="./selection.html" class="button-24 menu">Selection</a>
+      <a href="./insertion.html" class="button-24 menu">Insertion</a>
+      <br>
+      <br>
+      <br>
+      <a href="./main.html" class="button-25">Start Visualizer</a>
+      <a href="/index.html" class="button-25 home">Home</a>
+    </div>
+    <div class="container">
+      <h2>Insertion sort complexity</h2>
+      <br>
+<p>
+  Now, let's see the time complexity of insertion sort in best case, average case, and in worst case. <br>We will also see the space complexity of the insertion sort. <br>We will also see the space complexity of bubble sort.</p>
+  <br>
+  <h3>1. Time Complexity</h3>
+  <article>
+    Best Case :- O(n)<br>
+    Average Case :- O(n2)<br>
+    Worst Case :- O(n2)<br>
+<br>
+</article>
+      <p>
+        Now, let's see the working of insertion sort Algorithm.<br>
+
+        To understand the working of the insertion sort algorithm, <br>
+        let's take an unsorted array. It will be easier to understand the insertion sort via an example.<br>
+
+        Let the elements of array are -<br />
+        <div class="imges">
+          <img src="./asset/insertion/step-1.png" alt="step">
+        </div>
+        <p>Initially, the first two elements are compared in insertion sort.
+        </p>
+      </p>
+      <div class="imges">
+        <img src="./asset/insertion/step-2.png" alt="step">
+      </div>
+      <p>Here, 31 is greater than 12. That means both elements are already in ascending order. So, for now,<br> 12 is stored in a sorted sub-array.</p>
+      <div class="imges">
+        <img src="./asset/insertion/step-3.png" alt="step">
+      </div>
+<p>Now, move to the next two elements and compare them.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-4.png" alt="step">
+</div>
+<p>Here, 25 is smaller than 31. So, 31 is not at correct position. Now, swap 31 with 25. Along <br>with swapping, insertion sort will also check it with all elements in the sorted array..<br><br>
+<br>For now, the sorted array has only one element, i.e. 12. So, 25 is greater than 12. Hence,<br> the sorted array remains sorted after swapping.<br>
+</p>
+<div class="imges">
+  <img src="./asset/insertion/step-5.png" alt="step">
+</div>
+<p>Now, two elements in the sorted array are 12 and 25. Move forward to the next elements that are 31 and 8.<br></p>
+  <div class="imges">
+    <img src="./asset/insertion/step-6.png" alt="step">
+  </div>
+  <p>Both 31 and 8 are not sorted. So, swap them.</p>
+  <div class="imges">
+    <img src="./asset/insertion/step-7.png" alt="step">
+  </div>
+<p>After swapping, elements 25 and 8 are unsorted.</p>
+<br>
+<br>
+<div class="imges">
+  <img src="./asset/insertion/step-8.png" alt="step">
+</div>
+
+<p>So, swap them.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-9.png" alt="step">
+</div>
+
+<p>Now, elements 12 and 8 are unsorted.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-10.png" alt="step">
+</div>
+
+<p>So, swap them too.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-11.png" alt="step">
+</div>
+
+<p>Now, the sorted array has three items that are 8, 12 and 25. Move to the next items that are 31 and 32.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-12.png" alt="step">
+</div>
+
+<p>Hence, they are already sorted. Now, the sorted array includes 8, 12, 25 and 31.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-13.png" alt="step">
+</div>
+
+<p>Move to the next elements that are 32 and 17.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-14.png" alt="step">
+</div>
+
+<p>17 is smaller than 32. So, swap them.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-15.png" alt="step">
+</div>
+
+<p>Swapping makes 31 and 17 unsorted. So, swap them too.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-16.png" alt="step">
+</div>
+
+<p>Now, swapping makes 25 and 17 unsorted. So, perform swapping again.</p>
+<div class="imges">
+  <img src="./asset/insertion/step-17.png" alt="step">
+</div>
+
+<p>Now, the array is completely sorted.</p>
+<br>
+<br>
+
+<a href="./main.html" class="button-25">Start Visualizer</a>
+    </div>
+    
+    </div>
+    
+    <footer>
+      <p>Developed with &nbsp; <span style="color: rgb(239 68 68)"> ❤ </span> &nbsp; By Mangesh  <a href="https://github.com/mangeshsali/Sorting_visualizer"><i class="fa-brands fa-github link"></a></i> 
+        <a href="https://www.linkedin.com/in/mangesh-sali-535b55224/"><i class="fa-brands fa-linkedin link"></a></i></p> 
+    </footer>
+  </body>
+  <script src="https://kit.fontawesome.com/314c857e26.js" crossorigin="anonymous"></script>
+</html>

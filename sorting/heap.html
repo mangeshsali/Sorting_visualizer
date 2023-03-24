@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sort.css">
+    <link rel="icon" type="image/x-icon" href="/logo.svg" />
+    <title>Heap Sort Working</title>
+  </head>
+  <body>
+    <div class="nav-head">
+      <h1>Heap Sort Working</h1>
+    </div>
+    <div class="main-container">
+    <div class="menu-button">
+      <a href="./bubble.html" class="button-24 menu">Bubble</a>
+      <a href="./merge.html" class="button-24 menu">Merge</a>
+      <a href="./quick.html" class="button-24 menu">Quick</a>
+      <a href="./heap.html" class="button-24 menu">heap</a>
+      <a href="./selection.html" class="button-24 menu">Selection</a>
+      <a href="./insertion.html" class="button-24 menu">Insertion</a>
+      <br>
+      <br>
+      <br>
+      <a href="./main.html" class="button-25">Start Visualizer</a>
+      <a href="/index.html" class="button-25 home">Home</a>
+    </div>
+    <div class="container">
+      <h2>Heap sort complexity</h2>
+      <br>
+<p>
+  Now, let's see the time complexity of Heapsort in best case, average case, and in worst case.<br>We will also see the space complexity of Heap sort.</p>
+  <br>
+  <h3>1. Time Complexity</h3>
+  <article>
+    Best Case	O(n logn)<br>
+    Average Case	O(n log n)<br>
+    Worst Case	O(n log n)<br>
+<br>
+</article>
+      <p>
+        Now, let's see the working of the Heapsort Algorithm.<br />
+        <br>
+        <p>In heap sort, basically, there are two phases involved in the sorting of elements. By using <br>the heap sort algorithm, they are as follows -</p>
+        <ul class="list">
+          <li><p>The first step includes the creation of a heap by adjusting the elements of the array.</p></li><br>
+          <li><p>After the creation of heap, now remove the root element of the heap repeatedly by shifting it to the end <br> of the array, and then store the heap structure with the remaining elements.</p></li><br>
+        </ul>
+
+       <p>Now let's see the working of heap sort in detail by using an example. To understand it more clearly,  <br> let's take an unsorted array and try to sort it using heap sort. It will make the explanation clearer and easier</p><br>
+       <div class="imges">
+          <img src="./asset/heap/step-1.png" alt="step">
+        </div>
+ <p>First, we have to construct a heap from the given array and convert it into max heap.</p><br>
+      <div class="imges">
+        <img src="./asset/heap/step-2.png" alt="step">
+      </div>
+      <p>After converting the given heap into max heap, the array elements are -</p><br>
+      <div class="imges">
+        <img src="./asset/heap/step-3.png" alt="step">
+      </div>
+
+<p>Next, we have to delete the root element (89) from the max heap. To delete this node, we have to swap it <br>with the last node, i.e. (11). After deleting the root element, we again have to heapify it to convert it into max heap.</p><br>
+<div class="imges">
+  <img src="./asset/heap/step-4.png" alt="step">
+</div>
+
+<p>After swapping the array element 89 with 11, and converting the heap into max-heap, the elements of array are -</p>
+<div class="imges">
+  <img src="./asset/heap/step-5.png" alt="step">
+</div>
+
+<p>In the next step, again, we have to delete the root element (81) from the max heap. To delete this node, we have to<br> swap it with the last node, i.e. (54). After deleting the root element, we again have to heapify it to convert it into max heap.</p><br>
+  <div class="imges">
+    <img src="./asset/heap/step-6.png" alt="step">
+  </div>
+
+<p>After swapping the array element 81 with 54 and converting the heap into max-heap, the elements of array are </p><br>
+  <div class="imges">
+    <img src="./asset/heap/step-7.png" alt="step">
+  </div>
+
+<p>In the next step, we have to delete the root element (76) from the max heap again. To delete this node, <br>we have to swap it with the last node, i.e. (9). After deleting the root element, we again have to heapify <br>it to convert it into max heap.</p><br>
+<div class="imges">
+  <img src="./asset/heap/step-8.png" alt="step">
+</div>
+
+<p>After swapping the array element 76 with 9 and converting the heap into max-heap, the elements of array are -</p>
+<br>
+<div class="imges">
+  <img src="./asset/heap/step-9.png" alt="step">
+</div>
+
+
+<p>In the next step, again we have to delete the root element (54) from the max heap. To delete this node, <br>we have to swap it with the last node, i.e. (14). After deleting the root element, we again have to heapify <br>it to convert it into max heap.</p><br>
+<div class="imges">
+  <img src="./asset/heap/step-10.png" alt="step">
+</div>
+
+<p>After swapping the array element 54 with 14 and converting the heap into max-heap, the elements of array are -<br>
+</p>
+<div class="imges">
+  <img src="./asset/heap/step-11.png" alt="step">
+</div>
+<br>
+
+<p>In the next step, again we have to delete the root element (22) from the max heap. To delete this node,<br> we have to swap it with the last node, i.e. (11). After deleting the root element, <br>we again have to heapify it to convert it into max heap.<br></p>
+<div class="imges">
+  <img src="./asset/heap/step-12.png" alt="step">
+</div>
+
+<p>After swapping the array element 22 with 11 and converting the heap into max-heap, the elements of array are -<br></p>
+<div class="imges">
+  <img src="./asset/heap/step-13.png" alt="step">
+</div>
+
+<p>In the next step, again we have to delete the root element (14) from the max heap. To delete this node, <br>we have to swap it with the last node, i.e. (9). After deleting the root element,<br> we again have to heapify it to convert it into max heap.<br></p>
+<div class="imges">
+  <img src="./asset/heap/step-14.png" alt="step">
+</div>
+
+<p>After swapping the array element 14 with 9 and converting the heap into max-heap, the elements of array are -<br></p>
+<div class="imges">
+  <img src="./asset/heap/step-15.png" alt="step">
+</div>
+
+<p>In the next step, again we have to delete the root element (11) from the max heap. To delete this node, <br>we have to swap it with the last node, i.e. (9). After deleting the root element, <br>we again have to heapify it to convert it into max heap.<br></p>
+<div class="imges">
+  <img src="./asset/heap/step-16.png" alt="step">
+</div>
+
+<p>After swapping the array element 11 with 9, the elements of array are -<br></p>
+<div class="imges">
+  <img src="./asset/heap/step-17.png" alt="step">
+</div>
+
+<p>Now, heap has only one element left. After deleting it, heap will be empty.<br></p>
+<div class="imges">
+  <img src="./asset/heap/step-18.png" alt="step">
+</div>
+
+<p>After completion of sorting, the array elements are -<br></p>
+<div class="imges">
+  <img src="./asset/heap/step-19.png" alt="step">
+</div>
+
+<br>
+<p>Now, the array is completely sorted.<br></p>
+<br>
+
+<a href="./main.html" class="button-25">Start Visualizer</a>
+    </div>
+    
+    </div>
+    
+    <footer>
+      <p>Developed with &nbsp; <span style="color: rgb(239 68 68)"> ❤ </span> &nbsp; By Mangesh  <a href="https://github.com/mangeshsali/Sorting_visualizer"><i class="fa-brands fa-github link"></a></i> 
+        <a href="https://www.linkedin.com/in/mangesh-sali-535b55224/"><i class="fa-brands fa-linkedin link"></a></i></p> 
+    </footer>
+  </body>
+  <script src="https://kit.fontawesome.com/314c857e26.js" crossorigin="anonymous"></script>
+</html>

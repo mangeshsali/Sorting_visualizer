@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sort.css">
+    <link rel="icon" type="image/x-icon" href="/logo.svg" />
+    <title>Bubble Sort Working</title>
+  </head>
+  <body>
+    <div class="nav-head">
+      <h1>Bubble Sort Working</h1>
+    </div>
+    <div class="main-container">
+    <div class="menu-button">
+      <a href="./bubble.html" class="button-24 menu">Bubble</a>
+      <a href="./merge.html" class="button-24 menu">Merge</a>
+      <a href="./quick.html" class="button-24 menu">Quick</a>
+      <a href="./heap.html" class="button-24 menu">heap</a>
+      <a href="./selection.html" class="button-24 menu">Selection</a>
+      <a href="./insertion.html" class="button-24 menu">Insertion</a>
+      <br>
+      <br>
+      <br>
+      <a href="./main.html" class="button-25">Start Visualizer</a>
+      <a href="/index.html" class="button-25 home">Home</a>
+
+    </div>
+    <div class="container">
+      <h2>Bubble sort complexity</h2>
+      <br>
+<p>
+  Now, let's see the time complexity of bubble sort in the best case, average case, and worst case. <br>We will also see the space complexity of bubble sort.</p>
+  <br>
+  <h3>1. Time Complexity</h3>
+  <article>
+Best Case	 :- O(n)<br>
+Average Case :-	O(n2)<br>
+Worst Case :- O(n2)<br>
+<br>
+</article>
+      <p>
+        Now, let's see the working of Bubble sort Algorithm.<br />
+
+        To understand the working of bubble sort algorithm, let's take an
+        unsorted array. <br>We are taking a short and accurate array, as we know the
+        complexity of bubble sort is O(n2).<br />
+
+        Let the elements of array are -<br />
+        <div class="imges">
+          <img src="./asset/bubble/step-1.png" alt="step">
+        </div>
+        <h2>First Pass</h2>
+        <p>Sorting will start from the initial two elements. Let compare them to check which is greater.</p>
+      </p>
+      <div class="imges">
+        <img src="./asset/bubble/step-2.png" alt="step">
+      </div>
+      <p>Here, 32 is greater than 13 (32 > 13), so it is already sorted. Now, compare 32 with 26.</p>
+      <div class="imges">
+        <img src="./asset/bubble/step-3.png" alt="step">
+      </div>
+<p>Here, 26 is smaller than 36. So, swapping is required. <br>After swapping new array will look like -</p>
+<div class="imges">
+  <img src="./asset/bubble/step-4.png" alt="step">
+</div>
+<p>Now, compare 32 and 35.</p>
+<div class="imges">
+  <img src="./asset/bubble/step-5.png" alt="step">
+</div>
+<p>Here, 35 is greater than 32. So, there is no swapping required as they are already sorted.<br>
+
+  Now, the comparison will be in between 35 and 10.</p>
+  <div class="imges">
+    <img src="./asset/bubble/step-6.png" alt="step">
+  </div>
+  <p>Here, 10 is smaller than 35 that are not sorted. So, swapping is required. <br>Now, we reach at the end of the array. After first pass, the array will be -</p>
+  <div class="imges">
+    <img src="./asset/bubble/step-7.png" alt="step">
+  </div>
+<p>Now, move to the second iteration.</p>
+<br>
+<br>
+<h2>Second Pass</h2>
+<p>The same process will be followed for second iteration.</p>
+<div class="imges">
+  <img src="./asset/bubble/step-8.png" alt="step">
+</div>
+<p>Here, 10 is smaller than 32. So, swapping is required. After swapping, the array will be -</p>
+<div class="imges">
+  <img src="./asset/bubble/step-9.png" alt="step">
+</div>
+<p>Now, move to the third iteration.</p>
+<br>
+<br>
+<h2>Third Pass</h2>
+<p>The same process will be followed for third iteration.</p>
+<div class="imges">
+  <img src="./asset/bubble/step-10.png" alt="step">
+</div>
+<p>Here, 10 is smaller than 26. So, swapping is required. After swapping, the array will be -</p>
+<div class="imges">
+  <img src="./asset/bubble/step-11.png" alt="step">
+</div>
+<p>Now, move to the fourth iteration.</p>
+<br>
+<br>
+<h2>Fourth pass</h2>
+<p>Similarly, after the fourth iteration, the array will be -</p>
+<div class="imges">
+  <img src="./asset/bubble/step-12.png" alt="step">
+</div>
+<p>Hence, there is no swapping required, so the array is completely sorted.</p>
+<br>
+
+<a href="./main.html" class="button-25">Start Visualizer</a>
+</div>
+</div>
+    </div>
+    
+    </div>
+    
+    <footer>
+      <p>Developed with &nbsp; <span style="color: rgb(239 68 68)"> ❤ </span> &nbsp; By Mangesh  <a href="https://github.com/mangeshsali/Sorting_visualizer"><i class="fa-brands fa-github link"></a></i> 
+        <a href="https://www.linkedin.com/in/mangesh-sali-535b55224/"><i class="fa-brands fa-linkedin link"></a></i></p> 
+    </footer>
+  </body>
+  <script src="https://kit.fontawesome.com/314c857e26.js" crossorigin="anonymous"></script>
+</html>

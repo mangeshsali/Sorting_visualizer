@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="icon" type="image/x-icon" href="/logo.svg" />
+  </head>
+  <body>
+   
+      <nav>
+        <div class="header_right">
+          <img src="/logo.svg" alt="logo" class="img-logo" />
+          <p class="nav-heading">Sorting Visualizer</p>
+        </div>
+      </nav>
+    
+    <section class="main-section">
+      <div id="Info_Cont1">
+        <!-- <div class="array-inputs">
+          sfbsbzfz
+         -->
+         <div class="info-count-1-child">
+          <p>Size of the array:</p>
+          <input
+            id="a_size"
+            type="range"
+            min="1"
+            max="100"
+            step="1"
+            value="10"
+          />
+          <span id="arr-count">0</span>
+         </div>
+         <hr>
+         <div class="info-count-1-child">
+          <p>Speed of the algorithm:</p>
+          <input id="a_speed" type="range" min="1" max="5" step="1" value="4" />
+         </div>
+         
+          <button id="a_generate" class="button-24" role="button">
+            Generate New Array !
+          </button>
+       
+        <div class="algos btn-clik">
+          <!-- <select name="algos" id="algos">
+            <option value="bubble">Bubble</option>
+            <option value="quick">Quick</option>
+            <option value="merge">Merge</option>
+            <option value="heap">Heap</option>
+            <option value="insertion">Insertion</option>
+            <option value="selection">Selection</option>
+          </select> -->
+          <!-- <button id="start-sorting" class="algos-btn">Start</button> -->
+         
+          
+          <button>Bubble</button>
+          <button>Quick</button>
+          <button>Merge</button>
+          <button>Heap</button>
+          <button>Insertion</button>
+          <button>Selection</button>
+        </div>
+      </div>
+      <div id="array_container">
+      </div>
+      <div id="Info_Cont2">
+        <div class="group-cont2">
+          <div class="triangle"></div>
+          <span>Unsorted</span>
+        </div>
+        <div class="group-cont2">
+          <div class="rectangle"></div>
+          <span>Checking</span>
+        </div>
+        <div class="group-cont2">
+          <div class="circle"></div>
+          <span>Swapping</span>
+        </div>
+        <div class="group-cont2">
+          <div class="square"></div>
+          <span>Sorted</span>
+        </div>
+
+        <div class="btn">
+          <a href="bubble.html" class="button-25 abt-btn">About Algorithm</a>
+        </div>
+
+        <div class="btn">
+          <a href="/index.html" class="button-25 abt-btn home">Home</a>
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <footer>
+      <p>Developed with &nbsp; <span style="color: rgb(239 68 68)"> ❤ </span> &nbsp; By Mangesh  <a href="https://github.com/mangeshsali/Sorting_visualizer"><i class="fa-brands fa-github link"></a></i> 
+        <a href="https://www.linkedin.com/in/mangesh-sali-535b55224/"><i class="fa-brands fa-linkedin link"></a></i></p> 
+    </footer>
+    <script src="https://kit.fontawesome.com/314c857e26.js" crossorigin="anonymous"></script>
+    <script src="./Algorithm/main.js"></script>
+    <script src="./Algorithm/visualizations.js"></script>
+    <script src="./Algorithm/bubble.js"></script>
+    <script src="./Algorithm/merge.js"></script>
+    <script src="./Algorithm/quick.js"></script>
+    <script src="./Algorithm/heap.js"></script>
+    <script src="./Algorithm/selection.js"></script>
+    <script src="./Algorithm/insertion.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./logo.svg" />
+    <title>Home</title>
+</head>
+<body>
+  <div id="element-selector">
+    <div class="container">
+<div class="banner-text">
+  Sorting Visualizer
+  <p>Let's make learning fun!</p>
+    <button  class="btn">
+      <a href="./sorting/main.html">
+      <span>Start Sorting !</span>
+      </a>
+    </button>
+  </div>
+
+
+<div class="cards">
+
+  <a href="./sorting/bubble.html">
+  <button class="card-1 card">
+   <p class="card-text">Bubble Sort</p>
+  </button>
+</a>
+
+<a href="./sorting/merge.html">
+  <button class="card-2 card">
+    <p class="card-text">Merge Sort</p>
+  </button>
+  </a>
+  
+  <a href="./sorting/insertion.html">
+  <button class="card-3 card">
+    <p class="card-text">Insertion Sort</p>
+  </button>
+</a>
+
+<a href="./sorting/quick.html">
+  <button class="card-4 card">
+    <p class="card-text">Quick Sort</p>
+  </button>
+</a>
+
+
+<a href="./sorting/heap.html">
+  <button class="card-5 card">
+    <p class="card-text">Heap Sort</p>
+  </button>
+  </a>
+
+<a href="./sorting/selection.html">
+  <button class="card-6 card">
+    <p class="card-text">Selection Sort</p>
+  </button>
+</a>
+
+</div>
+</div>
+  </div>
+</body>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+      el: "#element-selector",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x7ff9,
+  backgroundColor: 0x100e10
+
+})
+</script>
+
+
+</body>
+</html>
